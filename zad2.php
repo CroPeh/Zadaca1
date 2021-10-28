@@ -1,6 +1,6 @@
 <?php
-    $prva=htmlspecialchars($_GET["prvi_kolokvij"]);
-    $druga=htmlspecialchars($_GET["drugi_kolokvij"]);
+    $prva=$_GET["prvi_kolokvij"];
+    $druga=$_GET["drugi_kolokvij"];
     $rezultat=($prva + $druga)/2;
     $zaokruzeni=round($rezultat);
     if($prva == 1 || $druga == 1){
